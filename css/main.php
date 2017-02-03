@@ -105,14 +105,14 @@ thead {
     background: #333;
     color: #fff;
 }
-#contactTable{
-  border: 1px solid black;
-}
+
 #contactTable th{
-  border: 2px solid black;
+  border-right: 1px solid black;
   height: 15px;
   text-align:center;
   padding: 5px;
+  color: white;
+  background-color: black;
 }
 #contactTable td:not(.btnTd){
   border: 1px solid black;

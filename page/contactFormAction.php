@@ -5,7 +5,6 @@ $target_dir = $_SERVER["DOCUMENT_ROOT"]."/challengePHP/profil_images/";
 $gameStr = "";
 
 $req = mysqli_query($cnx,"INSERT INTO contact(pseudo, first_name, birthday, email, game, profil_image) VALUES ('test', 'test', '12/12/1900', 'test.test@test.test', 'test;test', 'test.jpg')");
-
 $req= mysqli_query($cnx,"SELECT id FROM contact WHERE email = 'test.test@test.test'");
 $data = mysqli_fetch_assoc($req);
 $id = $data['id'];
@@ -33,7 +32,6 @@ $message = "Bonjour !, $firstname aka $pseudo s'est inscrit dans vos contacts";
 $headers = 'From: monsite.server.com' . "\r\n" .
 'Reply-To: webmaster@server.com' . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
-
 mail($to, $subject, $message, $headers);
 
 header("location:contact.php");

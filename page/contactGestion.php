@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang='fr'>
 	<head>
@@ -15,7 +16,7 @@
 		<?php include 'navbar.php'; ?>
 		<div class='row'>
 			<div class='col-lg-12'>
-				<h1 class='page-header'>Gestion graphique</h1>
+				<h1 class='page-header'>Gestion des contacts</h1>
 				<ol class='breadcrumb'>
 					<li>
 						<a href='../index.php'>Home</a>
